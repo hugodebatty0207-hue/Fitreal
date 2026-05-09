@@ -15,16 +15,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .app{max-width:430px;margin:0 auto;min-height:100dvh;background:#0a0a0a;display:flex;flex-direction:column;}
 .screen{display:none;flex-direction:column;flex:1;overflow:hidden;}
 .screen.active{display:flex;}
-
-/* NAVBAR */
 .navbar{display:flex;border-top:1px solid #222;padding:10px 0 max(16px,env(safe-area-inset-bottom));background:#0a0a0a;flex-shrink:0;}
 .navbar button{flex:1;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px;padding:6px 0;}
 .nav-icon{width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:22px;background:#1a1a1a;transition:all .2s;}
 .navbar button.active .nav-icon{background:#7F77DD;}
 .nav-label{font-size:11px;color:#555;font-weight:500;}
 .navbar button.active .nav-label{color:#fff;}
-
-/* AUTH */
 .auth-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 24px;background:#0a0a0a;}
 .auth-logo{font-size:56px;margin-bottom:12px;}
 .auth-title{font-size:32px;font-weight:800;margin-bottom:4px;letter-spacing:-1px;}
@@ -44,38 +40,31 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .avatar-preview{width:80px;height:80px;border-radius:50%;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;color:#7F77DD;overflow:hidden;cursor:pointer;border:2px dashed #333;}
 .avatar-preview img{width:100%;height:100%;object-fit:cover;}
 .avatar-pick span{font-size:12px;color:#555;}
-
-/* HOME */
 .scroll-area{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;}
-.home-header{padding:20px 20px 0;display:flex;align-items:center;justify-content:space-between;}
+.home-header{padding:24px 20px 0;display:flex;align-items:center;justify-content:space-between;}
 .home-greeting{font-size:14px;color:#555;}
-.home-name{font-size:22px;font-weight:800;margin-top:2px;}
-.home-avatar{width:44px;height:44px;border-radius:50%;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#7F77DD;overflow:hidden;}
+.home-name{font-size:24px;font-weight:800;margin-top:2px;}
+.home-avatar{width:48px;height:48px;border-radius:50%;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#7F77DD;overflow:hidden;}
 .home-avatar img{width:100%;height:100%;object-fit:cover;}
-
-/* CHALLENGE CARD */
 .challenge-hero{margin:20px 16px;background:linear-gradient(135deg,#1a1535,#0f0f1a);border-radius:24px;padding:24px;border:1px solid #2a2545;position:relative;overflow:hidden;}
-.challenge-hero::before{content:'';position:absolute;top:-40px;right:-40px;width:150px;height:150px;background:radial-gradient(circle,rgba(127,119,221,0.15),transparent);border-radius:50%;}
-.ch-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(127,119,221,0.2);color:#a89ff0;font-size:11px;font-weight:700;padding:5px 12px;border-radius:99px;margin-bottom:14px;border:1px solid rgba(127,119,221,0.3);}
-.ch-emoji{font-size:48px;margin-bottom:10px;display:block;}
+.ch-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(127,119,221,0.2);color:#a89ff0;font-size:12px;font-weight:700;padding:5px 12px;border-radius:99px;margin-bottom:16px;border:1px solid rgba(127,119,221,0.3);}
+.ch-secret{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 0;gap:10px;}
+.ch-secret-icon{font-size:48px;}
+.ch-secret-text{font-size:15px;color:#666;text-align:center;}
 .ch-title{font-size:28px;font-weight:800;letter-spacing:-0.5px;margin-bottom:6px;}
 .ch-desc{font-size:14px;color:#888;line-height:1.5;margin-bottom:20px;}
 .ch-countdown{background:rgba(0,0,0,0.4);border-radius:14px;padding:14px 16px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;}
 .ch-countdown-label{font-size:12px;color:#666;}
 .ch-countdown-time{font-size:24px;font-weight:800;font-variant-numeric:tabular-nums;color:#7F77DD;}
 .ch-btn{width:100%;padding:14px;border-radius:14px;background:#7F77DD;color:#fff;border:none;font-size:16px;font-weight:700;cursor:pointer;}
-.ch-btn:disabled{opacity:0.4;}
+.ch-btn:disabled{opacity:0.4;cursor:default;}
 .ch-btn-secondary{width:100%;padding:12px;border-radius:14px;background:transparent;color:#555;border:1px solid #222;font-size:14px;font-weight:600;cursor:pointer;margin-top:8px;}
-
-/* STATS ROW */
 .stats-row{margin:0 16px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
 .stat-card{background:#111;border-radius:16px;padding:16px 12px;text-align:center;border:1px solid #1e1e1e;}
 .stat-num{font-size:24px;font-weight:800;}
 .stat-lbl{font-size:11px;color:#555;margin-top:3px;}
-
-/* SURPRISE */
 .surprise-section{margin:16px;}
-.surprise-title{font-size:13px;color:#555;font-weight:600;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px;}
+.surprise-title{font-size:12px;color:#555;font-weight:700;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px;}
 .surprise-card{background:#111;border-radius:16px;padding:16px;border:1px solid #1e1e1e;display:flex;align-items:center;gap:14px;margin-bottom:10px;}
 .surprise-icon{width:44px;height:44px;border-radius:12px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
 .surprise-info{flex:1;}
@@ -83,53 +72,41 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .surprise-time{font-size:12px;color:#555;margin-top:2px;}
 .surprise-btn{background:#1a1a1a;color:#fff;border:none;border-radius:10px;padding:8px 14px;font-size:12px;font-weight:600;cursor:pointer;}
 .surprise-btn.done{background:#1a3a1a;color:#4ade80;}
-
-/* PHOTOS COUNT */
-.photos-bar{margin:16px;background:#111;border-radius:16px;padding:16px;border:1px solid #1e1e1e;display:flex;align-items:center;justify-content:space-between;}
+.photos-bar{margin:0 16px 16px;background:#111;border-radius:16px;padding:16px;border:1px solid #1e1e1e;display:flex;align-items:center;justify-content:space-between;}
 .photos-bar-left{display:flex;flex-direction:column;gap:4px;}
 .photos-bar-title{font-size:14px;font-weight:700;}
 .photos-bar-sub{font-size:12px;color:#555;}
 .photos-dots{display:flex;gap:6px;}
 .photo-dot{width:10px;height:10px;border-radius:50%;background:#222;}
 .photo-dot.used{background:#7F77DD;}
-
-/* CHALLENGE SCREEN */
 .ch-header{padding:20px 20px 12px;flex-shrink:0;}
-.ch-tag{font-size:12px;color:#555;font-weight:600;margin-bottom:4px;text-transform:uppercase;}
+.ch-tag{font-size:12px;color:#555;font-weight:700;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;}
 .ch-header h2{font-size:26px;font-weight:800;}
-.ch-timer-bar{margin:0 16px 14px;background:#1a1535;border-radius:12px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;border:1px solid #2a2545;}
+.ch-timer-bar{margin:0 16px 14px;background:#1a1535;border-radius:12px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border:1px solid #2a2545;}
 .ch-timer-label{font-size:12px;color:#888;}
-.ch-timer-val{font-size:20px;font-weight:800;color:#7F77DD;font-variant-numeric:tabular-nums;}
+.ch-timer-val{font-size:22px;font-weight:800;color:#7F77DD;font-variant-numeric:tabular-nums;}
 .ch-timer-val.urgent{color:#f43f5e;}
-.camera-wrap{margin:0 16px;border-radius:20px;overflow:hidden;background:#111;position:relative;aspect-ratio:3/4;flex-shrink:0;}
-.camera-wrap video{width:100%;height:100%;object-fit:cover;display:none;}
-.cam-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;}
-.cam-placeholder span{font-size:14px;color:#444;}
-.rep-badge{position:absolute;top:14px;left:14px;background:rgba(0,0,0,0.8);color:#fff;padding:7px 14px;border-radius:10px;font-size:18px;font-weight:700;display:none;}
-.ai-bar{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(0,0,0,0.8);color:#fff;padding:10px 14px;border-radius:10px;font-size:13px;text-align:center;display:none;}
-.ai-bar.ok{background:rgba(15,110,86,0.95);}
+.validate-area{margin:0 16px;background:#111;border-radius:20px;padding:48px 24px;display:flex;flex-direction:column;align-items:center;gap:16px;border:1px solid #1e1e1e;flex-shrink:0;}
+.validate-emoji{font-size:64px;}
+.validate-title{font-size:18px;font-weight:700;text-align:center;}
+.validate-desc{font-size:14px;color:#555;text-align:center;line-height:1.5;}
 .ch-actions{padding:14px 16px;flex-shrink:0;display:flex;flex-direction:column;gap:8px;}
-
-/* PHOTO */
 .ph-header{padding:20px 20px 10px;flex-shrink:0;}
 .ph-header h2{font-size:22px;font-weight:800;}
 .ph-header p{font-size:14px;color:#555;margin-top:4px;}
 .photo-wrap{margin:0 16px;border-radius:20px;overflow:hidden;background:#111;aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0;}
 .photo-wrap video{width:100%;height:100%;object-fit:cover;}
-.photo-stamp{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(0,0,0,0.7);color:#fff;padding:10px 14px;border-radius:10px;backdrop-filter:blur(10px);}
+.photo-stamp{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(0,0,0,0.7);color:#fff;padding:10px 14px;border-radius:10px;}
 .photo-stamp .ps-title{font-size:15px;font-weight:700;}
 .photo-stamp .ps-time{font-size:11px;opacity:.6;margin-top:2px;}
 .ph-actions{padding:14px 16px;flex-shrink:0;display:flex;flex-direction:column;gap:8px;}
 .ph-quota{text-align:center;font-size:12px;color:#555;padding:8px;}
-
-/* FEED */
 .feed-scroll{flex:1;overflow-y:auto;padding:12px 16px;display:flex;flex-direction:column;gap:14px;}
 .feed-topbar{padding:20px 20px 10px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
 .feed-topbar h1{font-size:22px;font-weight:800;}
 .feed-card{background:#111;border:1px solid #1e1e1e;border-radius:20px;overflow:hidden;}
 .feed-img{aspect-ratio:3/4;background:#1a1a2e;display:flex;align-items:center;justify-content:center;font-size:72px;position:relative;overflow:hidden;}
-.feed-img img{width:100%;height:100%;object-fit:cover;}
-.feed-overlay{position:absolute;bottom:12px;left:12px;right:12px;background:rgba(0,0,0,0.7);color:#fff;padding:10px 12px;border-radius:12px;backdrop-filter:blur(10px);}
+.feed-overlay{position:absolute;bottom:12px;left:12px;right:12px;background:rgba(0,0,0,0.7);color:#fff;padding:10px 12px;border-radius:12px;}
 .feed-overlay .fo-title{font-size:14px;font-weight:700;}
 .feed-overlay .fo-time{font-size:11px;opacity:.6;margin-top:1px;}
 .feed-meta{padding:12px 14px;display:flex;align-items:center;justify-content:space-between;}
@@ -138,19 +115,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .feed-av img{width:100%;height:100%;object-fit:cover;}
 .feed-uname{font-size:14px;font-weight:700;}
 .verified{background:rgba(74,222,128,0.1);color:#4ade80;font-size:10px;font-weight:600;padding:2px 7px;border-radius:99px;margin-left:5px;}
-.like-btn{display:flex;align-items:center;gap:5px;font-size:13px;color:#555;cursor:pointer;border:none;background:none;padding:4px 8px;border-radius:8px;}
+.like-btn{display:flex;align-items:center;gap:5px;font-size:13px;color:#555;cursor:pointer;border:none;background:none;padding:4px 8px;}
 .like-btn.liked{color:#f43f5e;}
 .empty-feed{text-align:center;padding:60px 20px;color:#333;}
-.empty-feed p{font-size:15px;margin-top:8px;}
-
-/* MY PHOTOS */
 .myphotos-topbar{padding:20px 20px 10px;flex-shrink:0;}
 .myphotos-topbar h1{font-size:22px;font-weight:800;}
 .myphotos-topbar p{font-size:13px;color:#555;margin-top:4px;}
 .myphotos-scroll{flex:1;overflow-y:auto;padding:12px 16px;}
 .myphotos-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 .myphoto-item{aspect-ratio:3/4;border-radius:16px;background:#111;border:1px solid #1e1e1e;display:flex;align-items:center;justify-content:center;font-size:48px;position:relative;overflow:hidden;}
-.myphoto-item img{width:100%;height:100%;object-fit:cover;}
 .myphoto-lbl{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.7);color:#fff;font-size:10px;font-weight:600;padding:6px 8px;}
 .prof-section{padding:20px 16px;display:flex;align-items:center;gap:14px;border-bottom:1px solid #1a1a1a;}
 .prof-av-big{width:60px;height:60px;border-radius:50%;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;color:#7F77DD;overflow:hidden;flex-shrink:0;}
@@ -158,12 +131,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .prof-info{flex:1;}
 .prof-pseudo{font-size:18px;font-weight:800;}
 .prof-stats-row{display:flex;gap:16px;margin-top:6px;}
-.prof-stat{text-align:center;}
 .prof-stat .psn{font-size:16px;font-weight:700;}
 .prof-stat .psl{font-size:11px;color:#555;}
 .logout-btn{margin:16px;padding:12px;border-radius:12px;border:1px solid #2a1a1a;background:transparent;color:#f43f5e;font-size:14px;font-weight:600;cursor:pointer;width:calc(100% - 32px);}
-
-/* NOTIF */
 .notif-overlay{position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;z-index:100;padding:16px;display:none;}
 .notif-overlay.show{display:block;}
 .notif-card{background:#1a1535;border:1px solid #2a2545;border-radius:20px;padding:20px;display:flex;align-items:center;gap:14px;box-shadow:0 8px 32px rgba(0,0,0,0.5);}
@@ -171,21 +141,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .notif-text{flex:1;}
 .notif-title-txt{font-size:15px;font-weight:700;}
 .notif-sub-txt{font-size:12px;color:#888;margin-top:2px;}
-.notif-go{background:#7F77DD;color:#fff;border:none;border-radius:10px;padding:10px 16px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;}
-
-.loading{text-align:center;padding:40px;color:#333;font-size:14px;}
+.notif-go{background:#7F77DD;color:#fff;border:none;border-radius:10px;padding:10px 16px;font-size:13px;font-weight:700;cursor:pointer;}
+.loading{text-align:center;padding:40px;color:#333;}
 </style>
 </head>
 <body>
 <div class="app">
 
-  <!-- NOTIF -->
   <div class="notif-overlay" id="notifOverlay">
     <div class="notif-card">
-      <div class="notif-icon-wrap" id="notifIconWrap">⚡</div>
+      <div class="notif-icon-wrap">🏆</div>
       <div class="notif-text">
         <div class="notif-title-txt" id="notifTitleTxt">Défi FitReal !</div>
-        <div class="notif-sub-txt" id="notifSubTxt">Il est temps de bouger</div>
+        <div class="notif-sub-txt" id="notifSubTxt">C'est l'heure de bouger !</div>
       </div>
       <button class="notif-go" onclick="acceptChallenge()">Go !</button>
     </div>
@@ -238,26 +206,29 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
         <div class="home-avatar" id="homeAvatar">?</div>
       </div>
 
-      <div class="challenge-hero">
+      <div class="challenge-hero" style="margin-top:20px;">
         <div class="ch-badge">🏆 Défi du jour</div>
-        <span class="ch-emoji" id="heroEmoji">🦵</span>
-        <div class="ch-title" id="heroTitle">Chargement...</div>
-        <div class="ch-desc" id="heroDesc">Prépare-toi !</div>
+        <div id="heroContent">
+          <div class="ch-secret">
+            <div class="ch-secret-icon">🔒</div>
+            <div class="ch-secret-text">Le défi arrive bientôt...<br>Reste prêt !</div>
+          </div>
+        </div>
         <div class="ch-countdown">
           <div class="ch-countdown-label">⏳ Prochain défi dans</div>
           <div class="ch-countdown-time" id="mainCountdown">--:--:--</div>
         </div>
-        <button class="ch-btn" id="mainChallengeBtn" onclick="goChallenge('main')" disabled>En attente du défi...</button>
+        <button class="ch-btn" id="mainChallengeBtn" onclick="goChallenge('main')" disabled>En attente...</button>
         <button class="ch-btn-secondary" id="lateBtn" style="display:none;" onclick="goChallenge('late')">Faire hors chrono (1 photo)</button>
       </div>
 
-      <div class="stats-row">
-        <div class="stat-card"><div class="stat-num" id="homeStreak">0</div><div class="stat-lbl">streak 🔥</div></div>
-        <div class="stat-card"><div class="stat-num" id="homeDone">0</div><div class="stat-lbl">défis</div></div>
-        <div class="stat-card"><div class="stat-num" id="homePhotos">0/3</div><div class="stat-lbl">photos today</div></div>
+      <div class="stats-row" style="margin-bottom:14px;">
+        <div class="stat-card"><div class="stat-num" id="homeStreak">0</div><div class="stat-lbl">🔥 Streak</div></div>
+        <div class="stat-card"><div class="stat-num" id="homeDone">0</div><div class="stat-lbl">Défis</div></div>
+        <div class="stat-card"><div class="stat-num" id="homePhotos">0/3</div><div class="stat-lbl">Photos</div></div>
       </div>
 
-      <div class="photos-bar" style="margin-top:14px;">
+      <div class="photos-bar">
         <div class="photos-bar-left">
           <div class="photos-bar-title">Photos aujourd'hui</div>
           <div class="photos-bar-sub" id="photosBarSub">Complète un défi pour poster</div>
@@ -270,81 +241,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       </div>
 
       <div class="surprise-section">
-        <div class="surprise-title">Défis surprises 🎲</div>
+        <div class="surprise-title">Défis surprises</div>
         <div id="surpriseList"></div>
       </div>
     </div>
     <div class="navbar">
       <button class="active" onclick="nav('home',this)">
-        <div class="nav-icon">🏠</div>
-        <div class="nav-label">Accueil</div>
-      </button>
-      <button onclick="nav('feed',this)">
-        <div class="nav-icon">👥</div>
-        <div class="nav-label">Amis</div>
-      </button>
-      <button onclick="nav('myphotos',this)">
-        <div class="nav-icon">📸</div>
-        <div class="nav-label">Mes photos</div>
-      </button>
-    </div>
-  </div>
-
-  <!-- CHALLENGE -->
-  <div class="screen" id="s-challenge">
-    <div class="ch-header">
-      <div class="ch-tag" id="chTag">Défi principal</div>
-      <h2 id="chTitleBig">20 squats</h2>
-    </div>
-    <div class="ch-timer-bar" id="chTimerBar">
-      <div class="ch-timer-label">⏱ Temps restant</div>
-      <div class="ch-timer-val" id="chTimerVal">10:00</div>
-    </div>
-    <div class="camera-wrap">
-      <div class="cam-placeholder" id="camPlaceholder">
-        <span style="font-size:48px;">📷</span>
-        <span>Active la caméra pour la vérification IA</span>
-      </div>
-      <video id="camVideo" autoplay playsinline muted></video>
-      <div class="rep-badge" id="repBadge">0</div>
-      <div class="ai-bar" id="aiBar">IA prête</div>
-    </div>
-    <div class="ch-actions">
-      <button class="btn btn-purple" id="camBtn" onclick="startCam()">Activer la caméra IA</button>
-      <button class="btn btn-outline" onclick="selfValidate()">✅ Je l'ai fait (sans caméra)</button>
-      <button class="btn btn-outline" onclick="cancelChallenge()">Annuler</button>
-    </div>
-  </div>
-
-  <!-- PHOTO -->
-  <div class="screen" id="s-photo">
-    <div class="ph-header">
-      <h2>📸 Photo souvenir</h2>
-      <p id="photoQuotaText">Tu peux poster jusqu'à 3 photos aujourd'hui</p>
-    </div>
-    <div class="photo-wrap" id="photoWrap">
-      <span style="font-size:48px;">📷</span>
-    </div>
-    <div class="ph-actions">
-      <button class="btn btn-purple" id="snapBtn" onclick="takeSnap()">Prendre la photo</button>
-      <button class="btn btn-dark" id="shareBtn" style="display:none;" onclick="sharePost()">Partager sur FitReal 🚀</button>
-      <button class="btn btn-outline" onclick="skipPhoto()">Passer</button>
-    </div>
-    <div class="ph-quota" id="phQuota"></div>
-  </div>
-
-  <!-- FEED -->
-  <div class="screen" id="s-feed">
-    <div class="feed-topbar">
-      <h1>👥 Amis</h1>
-      <span style="font-size:13px;color:#555;">Feed</span>
-    </div>
-    <div class="feed-scroll" id="feedList"><div class="loading">Chargement...</div></div>
-    <div class="navbar">
-      <button onclick="nav('home',this)">
         <div class="nav-icon">🏠</div><div class="nav-label">Accueil</div>
       </button>
-      <button class="active" onclick="nav('feed',this)">
+      <button onclick="nav('feed',this)">
         <div class="nav-icon">👥</div><div class="nav-label">Amis</div>
       </button>
       <button onclick="nav('myphotos',this)">
@@ -353,10 +258,59 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     </div>
   </div>
 
+  <!-- CHALLENGE -->
+  <div class="screen" id="s-challenge">
+    <div class="ch-header">
+      <div class="ch-tag" id="chTag">Défi du jour</div>
+      <h2 id="chTitleBig">...</h2>
+    </div>
+    <div class="ch-timer-bar">
+      <div class="ch-timer-label">⏳ Temps restant</div>
+      <div class="ch-timer-val" id="chTimerVal">10:00</div>
+    </div>
+    <div class="validate-area">
+      <div class="validate-emoji" id="validateEmoji">🏆</div>
+      <div class="validate-title" id="validateTitle">Fais ton exercice !</div>
+      <div class="validate-desc" id="validateDesc">Effectue le défi puis appuie sur valider.</div>
+    </div>
+    <div class="ch-actions">
+      <button class="btn btn-purple" onclick="selfValidate()">Valider — j'ai fait le défi !</button>
+      <button class="btn btn-outline" onclick="cancelChallenge()">Annuler</button>
+    </div>
+  </div>
+
+  <!-- PHOTO -->
+  <div class="screen" id="s-photo">
+    <div class="ph-header">
+      <h2>Photo souvenir</h2>
+      <p id="photoQuotaText">Prends une photo souvenir !</p>
+    </div>
+    <div class="photo-wrap" id="photoWrap">
+      <span style="font-size:48px;color:#333;">📷</span>
+    </div>
+    <div class="ph-actions">
+      <button class="btn btn-purple" id="snapBtn" onclick="takeSnap()">Prendre la photo</button>
+      <button class="btn btn-dark" id="shareBtn" style="display:none;" onclick="sharePost()">Partager sur FitReal</button>
+      <button class="btn btn-outline" onclick="skipPhoto()">Passer</button>
+    </div>
+    <div class="ph-quota" id="phQuota"></div>
+  </div>
+
+  <!-- FEED -->
+  <div class="screen" id="s-feed">
+    <div class="feed-topbar"><h1>Amis</h1></div>
+    <div class="feed-scroll" id="feedList"><div class="loading">Chargement...</div></div>
+    <div class="navbar">
+      <button onclick="nav('home',this)"><div class="nav-icon">🏠</div><div class="nav-label">Accueil</div></button>
+      <button class="active" onclick="nav('feed',this)"><div class="nav-icon">👥</div><div class="nav-label">Amis</div></button>
+      <button onclick="nav('myphotos',this)"><div class="nav-icon">📸</div><div class="nav-label">Mes photos</div></button>
+    </div>
+  </div>
+
   <!-- MY PHOTOS -->
   <div class="screen" id="s-myphotos">
     <div class="myphotos-topbar">
-      <h1>📸 Mes photos</h1>
+      <h1>Mes photos</h1>
       <p id="myPhotosQuota">0 / 3 photos utilisées aujourd'hui</p>
     </div>
     <div class="prof-section">
@@ -365,7 +319,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
         <div class="prof-pseudo" id="profPseudo">-</div>
         <div class="prof-stats-row">
           <div class="prof-stat"><div class="psn" id="profDone">0</div><div class="psl">défis</div></div>
-          <div class="prof-stat"><div class="psn" id="profStreak">0</div><div class="psl">streak</div></div>
+          <div class="prof-stat" style="margin-left:16px;"><div class="psn" id="profStreak">0</div><div class="psl">🔥 streak</div></div>
         </div>
       </div>
     </div>
@@ -374,17 +328,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
         <div style="grid-column:span 2;text-align:center;padding:40px;color:#333;">Aucune photo pour l'instant</div>
       </div>
     </div>
-    <button class="logout-btn" onclick="doLogout()">🚪 Se déconnecter</button>
+    <button class="logout-btn" onclick="doLogout()">Se déconnecter</button>
     <div class="navbar">
-      <button onclick="nav('home',this)">
-        <div class="nav-icon">🏠</div><div class="nav-label">Accueil</div>
-      </button>
-      <button onclick="nav('feed',this)">
-        <div class="nav-icon">👥</div><div class="nav-label">Amis</div>
-      </button>
-      <button class="active" onclick="nav('myphotos',this)">
-        <div class="nav-icon">📸</div><div class="nav-label">Mes photos</div>
-      </button>
+      <button onclick="nav('home',this)"><div class="nav-icon">🏠</div><div class="nav-label">Accueil</div></button>
+      <button onclick="nav('feed',this)"><div class="nav-icon">👥</div><div class="nav-label">Amis</div></button>
+      <button class="active" onclick="nav('myphotos',this)"><div class="nav-icon">📸</div><div class="nav-label">Mes photos</div></button>
     </div>
   </div>
 
@@ -421,18 +369,12 @@ window._signIn=signInWithEmailAndPassword;
 window._signOut=signOut;
 
 onAuthStateChanged(auth, user => {
-  if (user) {
-    window._currentUser = user;
-    initApp();
-  } else {
-    window._currentUser = null;
-    nav('login');
-  }
+  if (user) { window._currentUser = user; initApp(); }
+  else { window._currentUser = null; nav('login'); }
 });
 </script>
 
 <script>
-// CHALLENGES - fixés par jour (même pour tout le monde)
 const ALL_CHALLENGES = [
   {title:"20 squats",desc:"Fais 20 squats complets, dos droit, genoux alignés.",reps:20,emoji:"🦵"},
   {title:"15 pompes",desc:"Enchaîne 15 pompes avec une bonne posture.",reps:15,emoji:"💪"},
@@ -440,105 +382,101 @@ const ALL_CHALLENGES = [
   {title:"10 burpees",desc:"Descends bas, remonte haut — 10 fois.",reps:10,emoji:"🔥"},
   {title:"25 fentes",desc:"Alterne gauche/droite pour 25 fentes au total.",reps:25,emoji:"🏃"},
   {title:"20 mountain climbers",desc:"Position planche, genoux vers la poitrine.",reps:20,emoji:"🧗"},
-  {title:"30 secondes de planche",desc:"Tiens la position planche, dos droit.",reps:1,emoji:"🧱"}
+  {title:"30 sec de planche",desc:"Tiens la position planche, dos bien droit.",reps:1,emoji:"🧱"}
 ];
 
 const SURPRISE_CHALLENGES = [
-  {title:"10 pompes",desc:"Vite, 10 pompes !",reps:10,emoji:"💥"},
-  {title:"20 sauts",desc:"Saute 20 fois le plus haut possible !",reps:20,emoji:"🦘"},
-  {title:"15 squats",desc:"Accroupis-toi 15 fois !",reps:15,emoji:"⚡"},
-  {title:"30 secondes de gainage",desc:"Position planche, tiens bon !",reps:1,emoji:"🔥"}
+  {title:"10 pompes",desc:"Vite, 10 pompes !",emoji:"💥"},
+  {title:"20 sauts",desc:"Saute 20 fois le plus haut possible !",emoji:"🦘"},
+  {title:"15 squats",desc:"Accroupis-toi 15 fois !",emoji:"⚡"},
+  {title:"30 sec de gainage",desc:"Position planche, tiens bon !",emoji:"🔥"}
 ];
 
-// Défi du jour basé sur la date (même pour tout le monde)
 function getDailyChallenge() {
-  const today = new Date();
-  const dayIndex = Math.floor(today.getTime() / 86400000);
+  const dayIndex = Math.floor(Date.now() / 86400000);
   return ALL_CHALLENGES[dayIndex % ALL_CHALLENGES.length];
 }
 
-// Heure du défi principal (aléatoire mais fixe pour la journée, entre 8h et 20h)
 function getDailyChallengeTime() {
   const today = new Date();
-  const seed = today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
-  const hours = 8 + (seed % 12);
-  const mins = seed % 60;
+  const seed = today.getFullYear()*10000 + (today.getMonth()+1)*100 + today.getDate();
   const t = new Date(today);
-  t.setHours(hours, mins, 0, 0);
+  t.setHours(8 + (seed % 12), seed % 60, 0, 0);
   return t;
 }
 
-// 2 défis surprises à heures fixes dans la journée
 function getSurpriseTimes() {
   const today = new Date();
-  const seed = today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
-  const t1 = new Date(today); t1.setHours(10 + (seed % 4), (seed * 3) % 60, 0, 0);
-  const t2 = new Date(today); t2.setHours(15 + (seed % 4), (seed * 7) % 60, 0, 0);
+  const seed = today.getFullYear()*10000 + (today.getMonth()+1)*100 + today.getDate();
+  const t1 = new Date(today); t1.setHours(10 + (seed%4), (seed*3)%60, 0, 0);
+  const t2 = new Date(today); t2.setHours(15 + (seed%4), (seed*7)%60, 0, 0);
   return [
-    { time: t1, challenge: SURPRISE_CHALLENGES[seed % SURPRISE_CHALLENGES.length] },
-    { time: t2, challenge: SURPRISE_CHALLENGES[(seed + 2) % SURPRISE_CHALLENGES.length] }
+    {time:t1, challenge:SURPRISE_CHALLENGES[seed%SURPRISE_CHALLENGES.length]},
+    {time:t2, challenge:SURPRISE_CHALLENGES[(seed+2)%SURPRISE_CHALLENGES.length]}
   ];
 }
 
-let userProfile = null;
-let cur = null;
-let curMode = 'main';
-let repsDone = 0, aiInterval = null, camStream = null, photoStream = null;
-let challengeTimer = null, challengeSecondsLeft = 600;
-let avatarDataUrl = null;
-let todayPhotosUsed = 0;
-let maxPhotos = 1;
-let appStarted = false;
-let mainChallengeActive = false;
+let userProfile=null, cur=null, curMode='main';
+let challengeTimer=null, challengeSecondsLeft=600;
+let avatarDataUrl=null, todayPhotosUsed=0, maxPhotos=1;
+let appStarted=false, mainChallengeActive=false;
+let photoStream=null;
 
 function getTodayKey() {
-  const d = new Date();
+  const d=new Date();
   return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
 }
 
 async function initApp() {
   await loadUserProfile();
   nav('home');
-  if (!appStarted) { appStarted = true; startCountdowns(); renderSurprises(); }
+  if (!appStarted) { appStarted=true; startCountdowns(); renderSurprises(); requestNotifPermission(); }
   updateHomeUI();
+}
+
+async function requestNotifPermission() {
+  if ('Notification' in window && Notification.permission === 'default') {
+    await Notification.requestPermission();
+  }
+}
+
+function sendNotif(title, body) {
+  if ('Notification' in window && Notification.permission === 'granted') {
+    new Notification(title, { body, icon: '/icon.png' });
+  }
 }
 
 async function loadUserProfile() {
   try {
-    const snap = await window._getDoc(window._doc(window._db, 'users', window._currentUser.uid));
+    const snap = await window._getDoc(window._doc(window._db,'users',window._currentUser.uid));
     if (snap.exists()) {
       userProfile = snap.data();
       const todayKey = getTodayKey();
-      todayPhotosUsed = (userProfile.photosToday && userProfile.photosTodayKey === todayKey) ? userProfile.photosToday : 0;
+      todayPhotosUsed = (userProfile.photosTodayKey===todayKey) ? (userProfile.photosToday||0) : 0;
     }
   } catch(e) {}
 }
 
 function updateHomeUI() {
   if (!userProfile) return;
-  const pseudo = userProfile.pseudo || 'Toi';
+  const pseudo = userProfile.pseudo||'Toi';
   document.getElementById('homeName').textContent = pseudo;
-  document.getElementById('homeStreak').textContent = userProfile.streak || 0;
-  document.getElementById('homeDone').textContent = userProfile.totalDone || 0;
-  document.getElementById('homePhotos').textContent = todayPhotosUsed + '/3';
+  document.getElementById('homeStreak').textContent = userProfile.streak||0;
+  document.getElementById('homeDone').textContent = userProfile.totalDone||0;
+  document.getElementById('homePhotos').textContent = todayPhotosUsed+'/3';
   const av = document.getElementById('homeAvatar');
-  if (userProfile.avatarUrl) av.innerHTML = `<img src="${userProfile.avatarUrl}">`;
+  if (userProfile.avatarUrl) av.innerHTML=`<img src="${userProfile.avatarUrl}">`;
   else av.textContent = pseudo.slice(0,2).toUpperCase();
   updatePhotosDots();
-  const daily = getDailyChallenge();
-  document.getElementById('heroEmoji').textContent = daily.emoji;
-  document.getElementById('heroTitle').textContent = daily.title;
-  document.getElementById('heroDesc').textContent = daily.desc;
 }
 
 function updatePhotosDots() {
-  const max = maxPhotos;
-  const dots = document.getElementById('photosDots');
-  dots.innerHTML = [0,1,2].map(i => `<div class="photo-dot${i < todayPhotosUsed ? ' used' : ''}"></div>`).join('');
+  document.getElementById('photosDots').innerHTML=[0,1,2].map(i=>`<div class="photo-dot${i<todayPhotosUsed?' used':''}"></div>`).join('');
   const sub = document.getElementById('photosBarSub');
-  if (todayPhotosUsed === 0) sub.textContent = 'Complète un défi pour poster';
-  else sub.textContent = `${todayPhotosUsed} photo${todayPhotosUsed>1?'s':''} postée${todayPhotosUsed>1?'s':''} aujourd'hui`;
+  sub.textContent = todayPhotosUsed===0 ? 'Complète un défi pour poster' : `${todayPhotosUsed} photo${todayPhotosUsed>1?'s':''} postée${todayPhotosUsed>1?'s':''} aujourd'hui`;
 }
+
+let notifSentMain=false, notifSentS1=false, notifSentS2=false;
 
 function startCountdowns() {
   setInterval(() => {
@@ -548,71 +486,81 @@ function startCountdowns() {
     const el = document.getElementById('mainCountdown');
     const btn = document.getElementById('mainChallengeBtn');
     const lateBtn = document.getElementById('lateBtn');
-    if (diff <= 0 && diff > -600000) {
-      // Fenêtre de 10 min
-      const secsLeft = Math.max(0, Math.floor((600000 + diff) / 1000));
-      const m = Math.floor(secsLeft / 60), s = secsLeft % 60;
-      el.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-      btn.disabled = false;
-      btn.textContent = '🚀 Commencer le défi !';
-      lateBtn.style.display = 'none';
-      mainChallengeActive = true;
-      if (!document.getElementById('notifOverlay').classList.contains('show') && secsLeft === 599) {
-        showNotif('⚡', 'Défi FitReal !', getDailyChallenge().title + ' — Tu as 10 min !', false);
+    const heroContent = document.getElementById('heroContent');
+
+    if (diff<=0 && diff>-600000) {
+      const secsLeft = Math.max(0, Math.floor((600000+diff)/1000));
+      const m=Math.floor(secsLeft/60), s=secsLeft%60;
+      el.textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      btn.disabled=false;
+      btn.textContent='Commencer le défi !';
+      lateBtn.style.display='none';
+      mainChallengeActive=true;
+      const daily=getDailyChallenge();
+      heroContent.innerHTML=`<div style="font-size:48px;margin-bottom:10px;">${daily.emoji}</div><div class="ch-title">${daily.title}</div><div class="ch-desc">${daily.desc}</div>`;
+      if (!notifSentMain) {
+        notifSentMain=true;
+        showNotif('Défi FitReal !', daily.title+' — Tu as 10 min !');
+        sendNotif('Défi FitReal !', daily.title+' — Tu as 10 min !');
       }
-    } else if (diff <= -600000) {
-      el.textContent = 'Terminé';
-      btn.disabled = true;
-      btn.textContent = 'Défi expiré';
-      lateBtn.style.display = 'block';
-      mainChallengeActive = false;
+    } else if (diff<=-600000) {
+      el.textContent='Terminé';
+      btn.disabled=true;
+      btn.textContent='Défi expiré';
+      lateBtn.style.display='block';
+      mainChallengeActive=false;
+      const daily=getDailyChallenge();
+      heroContent.innerHTML=`<div style="font-size:48px;margin-bottom:10px;">${daily.emoji}</div><div class="ch-title">${daily.title}</div><div class="ch-desc">${daily.desc}</div>`;
     } else {
-      const h = Math.floor(diff / 3600000), m = Math.floor((diff % 3600000) / 60000), s = Math.floor((diff % 60000) / 1000);
-      el.textContent = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-      btn.disabled = true;
-      btn.textContent = 'En attente du défi...';
-      lateBtn.style.display = 'none';
+      const h=Math.floor(diff/3600000), m=Math.floor((diff%3600000)/60000), s=Math.floor((diff%60000)/1000);
+      el.textContent=`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      btn.disabled=true;
+      btn.textContent='En attente du défi...';
+      lateBtn.style.display='none';
+      heroContent.innerHTML=`<div class="ch-secret"><div class="ch-secret-icon">🔒</div><div class="ch-secret-text">Le défi arrive bientôt...<br>Reste prêt !</div></div>`;
     }
+
+    // Surprises
+    const surprises=getSurpriseTimes();
+    surprises.forEach((s,i)=>{
+      const d=s.time-now;
+      if (d<=0 && d>-600000) {
+        if (i===0 && !notifSentS1) { notifSentS1=true; showNotif('Défi surprise !', s.challenge.title+' — 5 min !'); sendNotif('Défi surprise !', s.challenge.title); }
+        if (i===1 && !notifSentS2) { notifSentS2=true; showNotif('Défi surprise !', s.challenge.title+' — 5 min !'); sendNotif('Défi surprise !', s.challenge.title); }
+      }
+    });
   }, 1000);
 }
 
 function renderSurprises() {
-  const surprises = getSurpriseTimes();
-  const list = document.getElementById('surpriseList');
-  list.innerHTML = '';
-  surprises.forEach((s, i) => {
-    const now = new Date();
-    const diff = s.time - now;
-    const done = diff < -600000;
-    const active = diff <= 0 && diff > -600000;
-    const timeStr = s.time.toLocaleTimeString('fr-FR', {hour:'2-digit', minute:'2-digit'});
-    const div = document.createElement('div');
-    div.className = 'surprise-card';
-    div.innerHTML = `
-      <div class="surprise-icon">${s.challenge.emoji}</div>
+  const surprises=getSurpriseTimes();
+  const list=document.getElementById('surpriseList');
+  list.innerHTML='';
+  surprises.forEach((s,i)=>{
+    const now=new Date();
+    const diff=s.time-now;
+    const done=diff<-600000;
+    const active=diff<=0&&diff>-600000;
+    const timeStr=s.time.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
+    const div=document.createElement('div');
+    div.className='surprise-card';
+    div.innerHTML=`
+      <div class="surprise-icon">${active||done?s.challenge.emoji:'🔒'}</div>
       <div class="surprise-info">
-        <div class="surprise-name">${s.challenge.title}</div>
-        <div class="surprise-time">${active ? '⏳ Actif maintenant !' : done ? '✓ Terminé' : '🕐 ' + timeStr}</div>
+        <div class="surprise-name">${active||done?s.challenge.title:'Défi secret'}</div>
+        <div class="surprise-time">${active?'Actif maintenant !':done?'Terminé':'Disponible à '+timeStr}</div>
       </div>
-      <button class="surprise-btn${done ? ' done' : ''}" ${done ? 'disabled' : ''} onclick="goSurprise(${i})">${done ? 'Fait' : active ? 'Go !' : 'Attendre'}</button>`;
+      <button class="surprise-btn${done?' done':''}" ${!active&&!done?'disabled':done?'disabled':''} onclick="goSurprise(${i})">${done?'Fait':active?'Go !':'...'}</button>`;
     list.appendChild(div);
   });
-  setInterval(() => renderSurprises(), 30000);
+  setInterval(renderSurprises, 30000);
 }
 
-function goSurprise(idx) {
-  const surprises = getSurpriseTimes();
-  cur = surprises[idx].challenge;
-  curMode = 'surprise';
-  startChallengeScreen();
-}
-
-function showNotif(icon, title, sub, isSurprise) {
-  document.getElementById('notifIconWrap').textContent = icon;
-  document.getElementById('notifTitleTxt').textContent = title;
-  document.getElementById('notifSubTxt').textContent = sub;
+function showNotif(title, sub) {
+  document.getElementById('notifTitleTxt').textContent=title;
+  document.getElementById('notifSubTxt').textContent=sub;
   document.getElementById('notifOverlay').classList.add('show');
-  setTimeout(() => document.getElementById('notifOverlay').classList.remove('show'), 10000);
+  setTimeout(()=>document.getElementById('notifOverlay').classList.remove('show'), 10000);
 }
 
 function acceptChallenge() {
@@ -621,306 +569,242 @@ function acceptChallenge() {
 }
 
 function nav(name, btn) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.getElementById('s-' + name).classList.add('active');
-  document.querySelectorAll('.navbar button').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('s-'+name).classList.add('active');
+  document.querySelectorAll('.navbar button').forEach(b=>b.classList.remove('active'));
   if (btn) btn.classList.add('active');
-  if (name === 'feed') loadFeed();
-  if (name === 'myphotos') loadMyPhotos();
+  if (name==='feed') loadFeed();
+  if (name==='myphotos') loadMyPhotos();
 }
 
 function goChallenge(mode) {
-  curMode = mode;
-  cur = getDailyChallenge();
-  maxPhotos = (mode === 'main' && mainChallengeActive) ? 3 : 1;
+  curMode=mode;
+  cur=getDailyChallenge();
+  maxPhotos=(mode==='main'&&mainChallengeActive)?3:1;
+  startChallengeScreen();
+}
+
+function goSurprise(idx) {
+  const surprises=getSurpriseTimes();
+  cur=surprises[idx].challenge;
+  curMode='surprise';
+  maxPhotos=1;
   startChallengeScreen();
 }
 
 function startChallengeScreen() {
-  repsDone = 0; stopCam();
-  document.getElementById('camVideo').style.display = 'none';
-  document.getElementById('camPlaceholder').style.display = 'flex';
-  document.getElementById('repBadge').style.display = 'none';
-  document.getElementById('aiBar').style.display = 'none';
-  document.getElementById('camBtn').style.display = 'block';
-  document.getElementById('camBtn').textContent = 'Activer la caméra IA';
-  document.getElementById('chTitleBig').textContent = cur.emoji + ' ' + cur.title;
-  document.getElementById('chTag').textContent = curMode === 'main' ? 'Défi principal' : 'Défi surprise';
-  challengeSecondsLeft = curMode === 'main' ? 600 : 300;
+  document.getElementById('chTitleBig').textContent=cur.emoji+' '+cur.title;
+  document.getElementById('chTag').textContent=curMode==='main'?'Défi du jour':'Défi surprise';
+  document.getElementById('validateEmoji').textContent=cur.emoji;
+  document.getElementById('validateTitle').textContent=cur.title;
+  document.getElementById('validateDesc').textContent=cur.desc;
+  challengeSecondsLeft=curMode==='main'?600:300;
+  document.getElementById('chTimerVal').className='ch-timer-val';
   startChallengeTimer();
   nav('challenge');
 }
 
 function startChallengeTimer() {
   if (challengeTimer) clearInterval(challengeTimer);
-  const val = document.getElementById('chTimerVal');
-  challengeTimer = setInterval(() => {
+  const val=document.getElementById('chTimerVal');
+  challengeTimer=setInterval(()=>{
     challengeSecondsLeft--;
-    const m = Math.floor(challengeSecondsLeft / 60), s = challengeSecondsLeft % 60;
-    val.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-    if (challengeSecondsLeft <= 30) val.className = 'ch-timer-val urgent';
-    if (challengeSecondsLeft <= 0) {
-      clearInterval(challengeTimer);
-      maxPhotos = 1;
-      selfValidate();
-    }
+    const m=Math.floor(challengeSecondsLeft/60), s=challengeSecondsLeft%60;
+    val.textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    if (challengeSecondsLeft<=30) val.className='ch-timer-val urgent';
+    if (challengeSecondsLeft<=0) { clearInterval(challengeTimer); maxPhotos=1; selfValidate(); }
   }, 1000);
 }
 
 function cancelChallenge() {
   if (challengeTimer) clearInterval(challengeTimer);
-  stopCam();
   nav('home');
 }
 
-async function startCam() {
-  try {
-    camStream = await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'},audio:false});
-    const v = document.getElementById('camVideo');
-    v.srcObject = camStream; v.style.display = 'block';
-    document.getElementById('camPlaceholder').style.display = 'none';
-    document.getElementById('repBadge').style.display = 'block';
-    document.getElementById('aiBar').style.display = 'block';
-    document.getElementById('camBtn').style.display = 'none';
-    repsDone = 0; updateRep(); simulateAI();
-  } catch(e) {
-    document.getElementById('camBtn').textContent = '⚠️ Caméra indisponible — valider manuellement';
-  }
-}
-
-function updateRep() { document.getElementById('repBadge').textContent = repsDone + ' / ' + cur.reps; }
-
-const aiMsgs = ['Détection...','Corps détecté ✓','Vas-y !','+ 1 rep !','Bonne posture !','Continue !','Super !'];
-let aiIdx = 0;
-
-function simulateAI() {
-  const bar = document.getElementById('aiBar');
-  aiInterval = setInterval(() => {
-    if (repsDone >= cur.reps) { clearInterval(aiInterval); return; }
-    aiIdx = (aiIdx + 1) % aiMsgs.length;
-    if (aiIdx === 3 || aiIdx === 4) { repsDone++; updateRep(); }
-    bar.textContent = aiMsgs[aiIdx]; bar.className = 'ai-bar';
-    if (repsDone >= cur.reps) {
-      clearInterval(aiInterval);
-      bar.className = 'ai-bar ok'; bar.textContent = '🎉 Défi validé par l\'IA !';
-      setTimeout(goPhoto, 1500);
-    }
-  }, 800);
-}
-
-function selfValidate() { stopCam(); goPhoto(); }
-
-function stopCam() {
-  if (camStream) { camStream.getTracks().forEach(t => t.stop()); camStream = null; }
-  if (aiInterval) { clearInterval(aiInterval); aiInterval = null; }
+function selfValidate() {
+  if (challengeTimer) clearInterval(challengeTimer);
+  goPhoto();
 }
 
 function goPhoto() {
-  if (challengeTimer) clearInterval(challengeTimer);
-  stopCam();
-  document.getElementById('photoWrap').innerHTML = '<span style="font-size:48px;">📷</span>';
-  document.getElementById('snapBtn').style.display = 'block';
-  document.getElementById('shareBtn').style.display = 'none';
-  const remaining = maxPhotos - todayPhotosUsed;
-  document.getElementById('photoQuotaText').textContent = remaining > 0 ? `Tu peux encore poster ${remaining} photo${remaining>1?'s':''} aujourd'hui` : 'Plus de photos disponibles aujourd\'hui';
-  document.getElementById('phQuota').textContent = maxPhotos === 3 ? '🏆 Défi dans le chrono — 3 photos autorisées !' : '⏱ Hors chrono — 1 photo autorisée';
+  document.getElementById('photoWrap').innerHTML='<span style="font-size:48px;color:#333;">📷</span>';
+  document.getElementById('snapBtn').style.display='block';
+  document.getElementById('shareBtn').style.display='none';
+  document.getElementById('snapBtn').disabled=false;
+  const remaining=maxPhotos-todayPhotosUsed;
+  document.getElementById('photoQuotaText').textContent=remaining>0?`Tu peux encore poster ${remaining} photo${remaining>1?'s':''} aujourd'hui`:'Plus de photos disponibles aujourd\'hui';
+  document.getElementById('phQuota').textContent=maxPhotos===3?'🏆 Défi dans le chrono — 3 photos autorisées !':'Hors chrono — 1 photo autorisée';
   nav('photo');
-  if (remaining > 0) startPhotoStream();
-  else document.getElementById('snapBtn').disabled = true;
+  if (remaining>0) startPhotoStream();
+  else document.getElementById('snapBtn').disabled=true;
 }
 
 async function startPhotoStream() {
   try {
-    photoStream = await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'},audio:false});
-    const wrap = document.getElementById('photoWrap'); wrap.innerHTML = '';
-    const v = document.createElement('video');
-    v.srcObject = photoStream; v.autoplay = true; v.playsInline = true; v.muted = true;
-    v.style.cssText = 'width:100%;height:100%;object-fit:cover;';
+    photoStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'},audio:false});
+    const wrap=document.getElementById('photoWrap'); wrap.innerHTML='';
+    const v=document.createElement('video');
+    v.srcObject=photoStream; v.autoplay=true; v.playsInline=true; v.muted=true;
+    v.style.cssText='width:100%;height:100%;object-fit:cover;';
     wrap.appendChild(v);
   } catch(e) {}
 }
 
 function takeSnap() {
-  if (photoStream) { photoStream.getTracks().forEach(t => t.stop()); photoStream = null; }
-  const t = new Date().toLocaleTimeString('fr-FR', {hour:'2-digit',minute:'2-digit'});
-  document.getElementById('photoWrap').innerHTML = `
+  if (photoStream) { photoStream.getTracks().forEach(t=>t.stop()); photoStream=null; }
+  const t=new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
+  document.getElementById('photoWrap').innerHTML=`
     <div style="width:100%;height:100%;background:linear-gradient(160deg,#1a1a2e,#0f172a);display:flex;align-items:center;justify-content:center;font-size:90px;">${cur.emoji}</div>
-    <div class="photo-stamp"><div class="ps-title">${cur.emoji} ${cur.title}</div><div class="ps-time">${t} · validé ✓</div></div>`;
-  document.getElementById('snapBtn').style.display = 'none';
-  document.getElementById('shareBtn').style.display = 'block';
+    <div class="photo-stamp"><div class="ps-title">${cur.emoji} ${cur.title}</div><div class="ps-time">${t} · validé</div></div>`;
+  document.getElementById('snapBtn').style.display='none';
+  document.getElementById('shareBtn').style.display='block';
 }
 
 async function sharePost() {
-  const btn = document.getElementById('shareBtn');
-  btn.disabled = true; btn.textContent = 'Publication...';
+  const btn=document.getElementById('shareBtn');
+  btn.disabled=true; btn.textContent='Publication...';
   try {
-    const uid = window._currentUser.uid;
-    const todayKey = getTodayKey();
-    await window._addDoc(window._col(window._db, 'posts'), {
-      uid, pseudo: userProfile.pseudo, avatarUrl: userProfile.avatarUrl || '',
-      challenge: cur.title, emoji: cur.emoji, likes: 0, verified: true,
-      mode: curMode, createdAt: window._ts()
+    const uid=window._currentUser.uid;
+    const todayKey=getTodayKey();
+    await window._addDoc(window._col(window._db,'posts'),{
+      uid, pseudo:userProfile.pseudo, avatarUrl:userProfile.avatarUrl||'',
+      challenge:cur.title, emoji:cur.emoji, likes:0, verified:true,
+      mode:curMode, createdAt:window._ts()
     });
     todayPhotosUsed++;
-    await window._updateDoc(window._doc(window._db, 'users', uid), {
-      totalDone: window._inc(1), photosToday: todayPhotosUsed, photosTodayKey: todayKey
+    await window._updateDoc(window._doc(window._db,'users',uid),{
+      totalDone:window._inc(1), photosToday:todayPhotosUsed, photosTodayKey:todayKey
     });
-    if (userProfile) { userProfile.totalDone = (userProfile.totalDone||0)+1; }
-    document.getElementById('homePhotos').textContent = todayPhotosUsed + '/3';
+    if (userProfile) userProfile.totalDone=(userProfile.totalDone||0)+1;
+    document.getElementById('homePhotos').textContent=todayPhotosUsed+'/3';
     updatePhotosDots();
   } catch(e) {}
   nav('feed');
 }
 
 function skipPhoto() {
-  if (photoStream) { photoStream.getTracks().forEach(t => t.stop()); photoStream = null; }
+  if (photoStream) { photoStream.getTracks().forEach(t=>t.stop()); photoStream=null; }
   nav('home');
 }
 
 async function loadFeed() {
-  const list = document.getElementById('feedList');
-  list.innerHTML = '<div class="loading">Chargement...</div>';
+  const list=document.getElementById('feedList');
+  list.innerHTML='<div class="loading">Chargement...</div>';
   try {
-    const q = window._query(window._col(window._db, 'posts'), window._orderBy('createdAt', 'desc'), window._limit(30));
-    const snap = await window._getDocs(q);
-    if (snap.empty) {
-      list.innerHTML = '<div class="empty-feed">👥<p>Aucune photo pour l\'instant<br>Sois le premier !</p></div>';
-      return;
-    }
-    list.innerHTML = '';
-    snap.forEach(d => {
-      const item = d.data(); const docId = d.id;
-      const initials = (item.pseudo||'AN').slice(0,2).toUpperCase();
-      const timeAgo = item.createdAt ? formatTime(item.createdAt.toDate()) : 'récemment';
-      const card = document.createElement('div');
-      card.className = 'feed-card';
-      card.innerHTML = `
-        <div class="feed-img">
-          <div style="font-size:90px;">${item.emoji}</div>
-          <div class="feed-overlay">
-            <div class="fo-title">${item.emoji} ${item.challenge}</div>
-            <div class="fo-time">${timeAgo}</div>
-          </div>
+    const q=window._query(window._col(window._db,'posts'),window._orderBy('createdAt','desc'),window._limit(30));
+    const snap=await window._getDocs(q);
+    if (snap.empty) { list.innerHTML='<div class="empty-feed"><p>Aucune photo pour l\'instant<br>Sois le premier !</p></div>'; return; }
+    list.innerHTML='';
+    snap.forEach(d=>{
+      const item=d.data(); const docId=d.id;
+      const initials=(item.pseudo||'AN').slice(0,2).toUpperCase();
+      const timeAgo=item.createdAt?formatTime(item.createdAt.toDate()):'récemment';
+      const card=document.createElement('div');
+      card.className='feed-card';
+      card.innerHTML=`
+        <div class="feed-img"><div style="font-size:90px;">${item.emoji}</div>
+          <div class="feed-overlay"><div class="fo-title">${item.emoji} ${item.challenge}</div><div class="fo-time">${timeAgo}</div></div>
         </div>
         <div class="feed-meta">
           <div class="feed-user">
             <div class="feed-av">${item.avatarUrl?`<img src="${item.avatarUrl}">`:initials}</div>
-            <div><span class="feed-uname">${item.pseudo||'Anonyme'}</span>${item.verified?'<span class="verified">✓ validé</span>':''}</div>
+            <div><span class="feed-uname">${item.pseudo||'Anonyme'}</span>${item.verified?'<span class="verified">validé</span>':''}</div>
           </div>
-          <button class="like-btn" data-id="${docId}" onclick="toggleLike(this)">❤️ <span>${item.likes||0}</span></button>
+          <button class="like-btn" data-id="${docId}" onclick="toggleLike(this)">♥ <span>${item.likes||0}</span></button>
         </div>`;
       list.appendChild(card);
     });
-  } catch(e) {
-    list.innerHTML = '<div class="empty-feed"><p>Erreur de chargement</p></div>';
-  }
+  } catch(e) { list.innerHTML='<div class="empty-feed"><p>Erreur de chargement</p></div>'; }
 }
 
 async function loadMyPhotos() {
   if (!userProfile) return;
-  const pseudo = userProfile.pseudo || '-';
-  document.getElementById('profPseudo').textContent = pseudo;
-  document.getElementById('profStreak').textContent = userProfile.streak || 0;
-  document.getElementById('profDone').textContent = userProfile.totalDone || 0;
-  document.getElementById('myPhotosQuota').textContent = todayPhotosUsed + ' / 3 photos utilisées aujourd\'hui';
-  const av = document.getElementById('profAvBig');
-  if (userProfile.avatarUrl) av.innerHTML = `<img src="${userProfile.avatarUrl}">`;
-  else av.textContent = pseudo.slice(0,2).toUpperCase();
+  const pseudo=userProfile.pseudo||'-';
+  document.getElementById('profPseudo').textContent=pseudo;
+  document.getElementById('profStreak').textContent=userProfile.streak||0;
+  document.getElementById('profDone').textContent=userProfile.totalDone||0;
+  document.getElementById('myPhotosQuota').textContent=todayPhotosUsed+' / 3 photos utilisées aujourd\'hui';
+  const av=document.getElementById('profAvBig');
+  if (userProfile.avatarUrl) av.innerHTML=`<img src="${userProfile.avatarUrl}">`;
+  else av.textContent=pseudo.slice(0,2).toUpperCase();
   try {
-    const q = window._query(window._col(window._db, 'posts'), window._orderBy('createdAt', 'desc'), window._limit(20));
-    const snap = await window._getDocs(q);
-    const grid = document.getElementById('myPhotosGrid');
-    const myPosts = [];
-    snap.forEach(d => { if(d.data().uid === window._currentUser.uid) myPosts.push(d.data()); });
-    if (myPosts.length === 0) {
-      grid.innerHTML = '<div style="grid-column:span 2;text-align:center;padding:40px;color:#333;">Aucune photo pour l\'instant 📸</div>';
-    } else {
-      grid.innerHTML = myPosts.map(p => `
-        <div class="myphoto-item">
-          <div style="font-size:48px;">${p.emoji}</div>
-          <div class="myphoto-lbl">${p.challenge}</div>
-        </div>`).join('');
-    }
+    const q=window._query(window._col(window._db,'posts'),window._orderBy('createdAt','desc'),window._limit(20));
+    const snap=await window._getDocs(q);
+    const grid=document.getElementById('myPhotosGrid');
+    const myPosts=[];
+    snap.forEach(d=>{ if(d.data().uid===window._currentUser.uid) myPosts.push(d.data()); });
+    if (myPosts.length===0) { grid.innerHTML='<div style="grid-column:span 2;text-align:center;padding:40px;color:#333;">Aucune photo pour l\'instant</div>'; return; }
+    grid.innerHTML=myPosts.map(p=>`<div class="myphoto-item"><div style="font-size:48px;">${p.emoji}</div><div class="myphoto-lbl">${p.challenge}</div></div>`).join('');
   } catch(e) {}
 }
 
 function formatTime(date) {
-  const diff = Math.floor((Date.now() - date.getTime()) / 1000);
-  if (diff < 60) return 'à l\'instant';
-  if (diff < 3600) return 'il y a ' + Math.floor(diff/60) + ' min';
-  if (diff < 86400) return 'il y a ' + Math.floor(diff/3600) + 'h';
-  return 'il y a ' + Math.floor(diff/86400) + 'j';
+  const diff=Math.floor((Date.now()-date.getTime())/1000);
+  if (diff<60) return 'à l\'instant';
+  if (diff<3600) return 'il y a '+Math.floor(diff/60)+' min';
+  if (diff<86400) return 'il y a '+Math.floor(diff/3600)+'h';
+  return 'il y a '+Math.floor(diff/86400)+'j';
 }
 
 async function toggleLike(btn) {
   btn.classList.toggle('liked');
-  const span = btn.querySelector('span');
-  const isLiked = btn.classList.contains('liked');
-  span.textContent = parseInt(span.textContent) + (isLiked ? 1 : -1);
-  try {
-    await window._updateDoc(window._doc(window._db, 'posts', btn.dataset.id), {likes: window._inc(isLiked?1:-1)});
-  } catch(e) {}
+  const span=btn.querySelector('span');
+  const isLiked=btn.classList.contains('liked');
+  span.textContent=parseInt(span.textContent)+(isLiked?1:-1);
+  try { await window._updateDoc(window._doc(window._db,'posts',btn.dataset.id),{likes:window._inc(isLiked?1:-1)}); } catch(e) {}
 }
 
 function updateInitials() {
-  const pseudo = document.getElementById('regPseudo').value;
-  document.getElementById('avatarInitials').textContent = pseudo ? pseudo.slice(0,2).toUpperCase() : '?';
+  const p=document.getElementById('regPseudo').value;
+  document.getElementById('avatarInitials').textContent=p?p.slice(0,2).toUpperCase():'?';
 }
 
 function previewAvatar(input) {
   if (!input.files[0]) return;
-  const reader = new FileReader();
-  reader.onload = e => {
-    avatarDataUrl = e.target.result;
-    document.getElementById('avatarPreview').innerHTML = `<img src="${avatarDataUrl}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">`;
-  };
+  const reader=new FileReader();
+  reader.onload=e=>{ avatarDataUrl=e.target.result; document.getElementById('avatarPreview').innerHTML=`<img src="${avatarDataUrl}" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">`; };
   reader.readAsDataURL(input.files[0]);
 }
 
 async function doRegister() {
-  const pseudo = document.getElementById('regPseudo').value.trim();
-  const email = document.getElementById('regEmail').value.trim();
-  const pass = document.getElementById('regPass').value;
-  const err = document.getElementById('regError');
-  if (!pseudo) { err.textContent = 'Entre un pseudo'; return; }
-  if (!email) { err.textContent = 'Entre ton email'; return; }
-  if (pass.length < 6) { err.textContent = 'Mot de passe trop court'; return; }
-  err.textContent = '';
+  const pseudo=document.getElementById('regPseudo').value.trim();
+  const email=document.getElementById('regEmail').value.trim();
+  const pass=document.getElementById('regPass').value;
+  const err=document.getElementById('regError');
+  if (!pseudo){err.textContent='Entre un pseudo';return;}
+  if (!email){err.textContent='Entre ton email';return;}
+  if (pass.length<6){err.textContent='Mot de passe trop court';return;}
+  err.textContent='';
   try {
-    const cred = await window._createUser(window._auth, email, pass);
-    let avatarUrl = '';
+    const cred=await window._createUser(window._auth,email,pass);
+    let avatarUrl='';
     if (avatarDataUrl) {
       try {
-        const storRef = window._ref(window._storage, 'avatars/' + cred.user.uid);
-        await window._uploadString(storRef, avatarDataUrl, 'data_url');
-        avatarUrl = await window._getDownloadURL(storRef);
+        const storRef=window._ref(window._storage,'avatars/'+cred.user.uid);
+        await window._uploadString(storRef,avatarDataUrl,'data_url');
+        avatarUrl=await window._getDownloadURL(storRef);
       } catch(e) {}
     }
-    await window._setDoc(window._doc(window._db, 'users', cred.user.uid), {
-      pseudo, email, avatarUrl, streak: 0, totalDone: 0, photosToday: 0, photosTodayKey: '', createdAt: window._ts()
+    await window._setDoc(window._doc(window._db,'users',cred.user.uid),{
+      pseudo,email,avatarUrl,streak:0,totalDone:0,photosToday:0,photosTodayKey:'',createdAt:window._ts()
     });
   } catch(e) {
     if (e.code==='auth/email-already-in-use') err.textContent='Email déjà utilisé';
     else if (e.code==='auth/invalid-email') err.textContent='Email invalide';
-    else err.textContent='Erreur : ' + e.message;
+    else err.textContent='Erreur : '+e.message;
   }
 }
 
 async function doLogin() {
-  const email = document.getElementById('loginEmail').value.trim();
-  const pass = document.getElementById('loginPass').value;
-  const err = document.getElementById('loginError');
-  err.textContent = '';
-  try {
-    await window._signIn(window._auth, email, pass);
-  } catch(e) {
-    err.textContent = 'Email ou mot de passe incorrect';
-  }
+  const email=document.getElementById('loginEmail').value.trim();
+  const pass=document.getElementById('loginPass').value;
+  const err=document.getElementById('loginError');
+  err.textContent='';
+  try { await window._signIn(window._auth,email,pass); }
+  catch(e) { err.textContent='Email ou mot de passe incorrect'; }
 }
 
-async function doLogout() {
-  await window._signOut(window._auth);
-}
+async function doLogout() { await window._signOut(window._auth); }
 
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
 </script>
